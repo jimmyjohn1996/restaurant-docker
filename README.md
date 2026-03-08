@@ -2,10 +2,6 @@
 
 A production-ready containerized web application deployed on AWS with a fully automated CI/CD pipeline.
 
-## 🚀 Live Demo
-> Deployed on AWS EC2 with Application Load Balancer
-> `http://54.81.68.175`
-
 ## 🛠️ Tech Stack
 
 | Technology | Usage |
