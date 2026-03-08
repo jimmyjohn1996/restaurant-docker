@@ -19,11 +19,9 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-¸      - name: Build and Push
+      - name: Build and Push
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          tags: |
-            dockerimagesaws/saffron-sage:latest
-            dockerimagesaws/saffron-sage:${{ github.run_number }}
+          tags: dockerimagesaws/saffron-sage:latest,dockerimagesaws/saffron-sage:${{ github.run_number }}
